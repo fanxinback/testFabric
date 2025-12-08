@@ -1,0 +1,50 @@
+table products
+	lineageTag: 6a091802-7044-4de0-81d5-f17c18f8b0fa
+	sourceLineageTag: [dbo].[products]
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		lineageTag: fd06d924-b2b4-4b54-916f-1760fd03b648
+		sourceLineageTag: ProductID
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: c2801999-cb6c-4d30-a0c0-4b0f2b5802d2
+		sourceLineageTag: ProductName
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: c271de01-bffa-4383-b3c7-a2052cc2bcfe
+		sourceLineageTag: Category
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 06eb2aca-891b-4e66-b17a-df12124029eb
+		sourceLineageTag: Price
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	partition products = entity
+		mode: directLake
+		source
+			entityName: products
+			expressionSource: 'DirectLake - testlakehouse'
+

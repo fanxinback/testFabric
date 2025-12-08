@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MirroredAzureDatabricksCatalog",
+    "displayName": "testadb",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "014b079b-e1a9-b31b-457a-cdaa72dacf53"
+  }
+}

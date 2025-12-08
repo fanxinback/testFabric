@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/mirroredAzureDatabricksCatalog/definition/mirroredAzureDatabricksCatalogDefinition/1.0.0/schema.json",
+  "autoSync": "Enabled",
+  "catalogName": "testadb",
+  "databricksWorkspaceConnectionId": "efbce939-60d6-46de-92db-79971604529e",
+  "mirrorConfiguration": {
+    "schemas": []
+  },
+  "mirroringMode": "Full"
+}

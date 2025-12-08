@@ -37,8 +37,8 @@ import pandas as pd
 
 aifunc.default_conf.model_deployment_name = "gpt-5"
 aifunc.default_conf.temperature = 1
-# aifunc.default_conf.top_p = 1
-# aifunc.default_conf.reasoning_effort = "low"
+aifunc.default_conf.top_p = 1
+aifunc.default_conf.reasoning_effort = "low"
 
 # METADATA ********************
 
